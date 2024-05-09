@@ -1,3 +1,4 @@
+
 const homePage = document.getElementById("homePage")
 const lineCalculator = document.getElementById("lineCalulator")
 
@@ -8,10 +9,10 @@ const lineCalculator = document.getElementById("lineCalulator")
 homePage.addEventListener("click",function(){
     window.location.href = "index.php"
     
-    
-})
-
-lineCalculator.addEventListener("click",function(){  
+  })
+  
+  lineCalculator.addEventListener("click",function(){  
+   
     window.open("https://za12ew44zz.github.io/Tax-Calculator-Line-Creator/","_blank")
   
 })
@@ -23,12 +24,14 @@ lineCalculator.addEventListener("click",function(){
 
 
 $(document).ready(function(){
+  
     $("#menu-function").click(function(){
+      $("#box-menu").toggle(100)
       
-        $("#box-menu").toggle(100)
     })
-
+    
     $("#full-screen").click(function(){
+        
         if (document.fullscreenEnabled) {
            
             document.documentElement.requestFullscreen();
@@ -41,4 +44,11 @@ $(document).ready(function(){
             console.error("Fullscreen not supported by your browser.");
           }
     })
+    
+    $("#toggle-darkmode").click(function(){
+      
+      $("body").toggleClass("light-mode dark-mode");
+    })
+
+  
 })

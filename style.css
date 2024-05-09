@@ -4,7 +4,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
-    
+    transition: .3s;
     
 }
 
@@ -103,6 +103,7 @@ body{
 
 
 #menu-function{
+    
     width: 10%;
     height: 10%;
     position: fixed;
@@ -122,7 +123,7 @@ body{
     
     width: 45%;
     height:10%;
-    background-color: #825385;
+    background-color: #69266c;
     position: fixed;
     right: 0;
     bottom: 0;
@@ -147,3 +148,16 @@ body{
     cursor: pointer;
     color: #332135;
 }
+
+/*------------------------  Dark Mode ------------------------*/
+
+body.light-mode{
+  background-color: #fff;
+}
+
+body.dark-mode{
+  background-color: #000;
+  color: #fff;
+} 
+
+/*------------------------  Dark Mode ------------------------*/
